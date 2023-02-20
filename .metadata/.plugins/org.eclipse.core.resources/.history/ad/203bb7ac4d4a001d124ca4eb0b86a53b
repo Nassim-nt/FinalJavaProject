@@ -1,0 +1,26 @@
+package myCourse;
+
+public class JavaCourse {
+	
+	//java starts running program from main method 
+	//from which line in the main method
+	//where program ends? my program end at the last line of main method
+	public static void main(String[] args) {
+		System.out.println("this is java class");
+		System.out.println("we ara trying to learn java");
+		prnt();
+		
+		
+				
+			
+	}
+	
+   public static void prnt() {
+	   System.out.println("this is a text ");
+		System.out.print("this a new text");
+	   
+	   
+	   
+	   
+   }
+}

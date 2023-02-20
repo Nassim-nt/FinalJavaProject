@@ -1,0 +1,25 @@
+package question38;
+
+public class ReadDictionary {
+
+	public static void main(String[] args) {
+		
+		Path path = Paths.get(filePathString);
+
+		if (Files.exists(path)) {
+		  // file exist
+		}
+
+		if (Files.notExists(path)) {
+		  // file is not exist
+		}
+
+	}
+	
+	
+	public static String doesFileExist(String path) {
+		return path;
+		
+	}
+
+}

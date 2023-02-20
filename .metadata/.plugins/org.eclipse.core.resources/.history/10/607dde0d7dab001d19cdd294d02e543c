@@ -1,0 +1,49 @@
+package textFile;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Write {
+
+	public static void main(String[] args) throws IOException {
+		
+		Date d = new Date();  
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat ("MMddyyyy_hhmmss"); // we are creating an object for simple date format (format date has to be this form)
+		String timeStamp = simpleDateFormat.format(d);
+		
+		String path = "data\\\\new_Salary.csv"+ timeStamp +    ".txt";
+		File f = new File(path);
+		FileWriter fw = new FileWriter(f, true); // it is appended (we will not override the past file)
+		BufferedWriter bw = new BufferedWriter(fw);
+		
+		
+		bw.write("Hello this is something");
+		bw.newLine();
+		bw.write("and this is another thing");
+		bw.newLine();
+		bw.close();
+
+		/*public static void readExcelDataByRowCol(String path, int SheetIndex, int RowNum, int ColNum) {
+		  String result = "";
+		  try {
+		   File f = new File(path);
+		   FileInputStream fi = new FileInputStream(f);
+		   Workbook wb = WorkbookFactory.create(fi);
+		   Sheet ws = wb.getSheetAt(SheetIndex);
+		   result = "" + ws.getRow(RowNum).getCell(ColNum);
+		   fi.close();
+		  }
+		  catch (IOException e){
+		   System.out.println("Error reading excel file");
+		  }
+		  return result;
+		 }.*/
+	
+		
+	}
+
+}

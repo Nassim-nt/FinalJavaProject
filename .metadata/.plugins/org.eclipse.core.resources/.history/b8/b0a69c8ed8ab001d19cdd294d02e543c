@@ -1,0 +1,20 @@
+package excelFlie;
+
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class CreateExcel {
+
+	public static void main(String[] args) {
+		
+	
+		XSSFWorkbook wb = new XSSFWorkbook();        // we create object of work sheet
+		XSSFSheet ws1 = wb.createSheet("my data");   // we connect worksheet to work book 
+		XSSFSheet ws2 = wb.createSheet("James bond");
+
+		Row r0 = ws1.createRow(0);
+	}
+
+}

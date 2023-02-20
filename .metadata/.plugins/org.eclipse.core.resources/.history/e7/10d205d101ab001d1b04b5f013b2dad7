@@ -1,0 +1,90 @@
+package question37;
+
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomNumbers {
+
+	public static void main(String[] args) {
+
+		/*Scanner ui = new Scanner(System.in);
+
+		System.out.println("Enter nth smallest number:");
+		int nth = ui.nextInt();
+
+		
+		int start = nth;
+		int end = nth + 501;
+		int counter;
+
+		int smallest;
+		int greatest;
+		int randomInt;
+
+		int numbers[] = new int[500];
+		Random random = new Random();
+
+		randomInt = random.nextInt(end - start) + start;
+
+		numbers[0] = randomInt;
+
+		smallest = numbers[0];
+		greatest = numbers[499];
+
+		for (counter = 1; counter < 500; counter++) {
+
+			numbers[counter] = random.nextInt(end - start) + start;
+			
+			
+			 smallest = Math.min(smallest, numbers[counter]);
+			greatest = Math.max(greatest, numbers[counter]);
+			
+			
+			
+			
+
+			System.out.println("Random numbers: " + Arrays.toString(numbers));
+
+			System.out.println(smallest);
+			System.out.println(greatest);
+			System.out.println(numbers.length);
+			
+		}*/
+		
+		
+		int start = 100;
+        int end = 1001;
+        int counter = 500;
+
+        int smallest;
+        int greatest;
+        int randomInt ;
+
+        int numbers [] = new int[counter];
+        Random random = new Random(); 
+
+        randomInt = random.nextInt(end-start) + start;
+        numbers [0] = randomInt;
+
+        smallest = randomInt;
+        greatest = randomInt;
+
+
+        System.out.println("0th Greatest : " + greatest + "\n");
+        System.out.println("0th Smallest : " + smallest + "\n");
+
+        for(int i=1;i<counter;i++) {
+
+            numbers[i] = random.nextInt(end-start) + start;
+
+            smallest = Math.min(smallest,numbers[i]);
+            greatest = Math.max(greatest,numbers[i]);
+
+            System.out.println("Random numbers: " + Arrays.toString(numbers) + "\n\n");
+            System.out.println(i + "th Greatest : " + greatest + "\n");
+            System.out.println(i + "th Smallest : " + smallest + "\n");
+        }
+	}
+
+}

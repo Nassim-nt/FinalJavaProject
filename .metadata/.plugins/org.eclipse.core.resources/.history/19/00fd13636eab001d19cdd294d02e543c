@@ -1,0 +1,12 @@
+package textFile;
+
+public class ReadTXT {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}

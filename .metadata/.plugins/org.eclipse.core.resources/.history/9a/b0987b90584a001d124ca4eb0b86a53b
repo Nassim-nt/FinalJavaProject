@@ -1,0 +1,40 @@
+package myCourse;
+
+public class JavaCourse {
+	
+	//java starts running program from main method 
+	//from which line in the main method
+	//where program ends? my program end at the last line of main method
+	public static void main(String[] args) {
+		pr("Book");
+		pr("thi is java course");
+		
+		
+		
+		
+		
+	}
+	
+	// does this method has a parameters? No, because the parentheses are empty.
+   public static void prnt() {
+	   System.out.println("this is a text ");
+		System.out.println("this a new text");
+	   
+	   
+   }
+   // does this method has parameters? yes, because the string is inside the parentheses.
+   // we passed data to the method 
+   public static void pr(String str) {
+		System.out.println(str);
+		prnt();
+		
+		
+	}
+	
+	
+   public static void abc() {
+	   System.out.println(1);
+	   System.out.println(2);
+	   System.out.println(3);
+   }
+}

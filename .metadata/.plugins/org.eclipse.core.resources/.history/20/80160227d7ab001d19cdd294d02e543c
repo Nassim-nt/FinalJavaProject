@@ -1,0 +1,12 @@
+package excelFlie;
+
+public class CreateExcel {
+
+	public static void main(String[] args) {
+		
+	
+		XSSFWorkbook wb = new XSSFWorkbook();
+
+	}
+
+}
